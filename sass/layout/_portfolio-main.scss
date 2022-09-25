@@ -1,0 +1,106 @@
+.section.projects {
+  padding: 94px 0;
+}
+
+/* position */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* style text */
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+
+.team__box {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
+.main .link {
+  display: block;
+}
+
+/* відступи між картками */
+.portfolio-card {
+  width: calc((100% - 60px) / 3);
+}
+
+.portfolio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.main .link:hover,
+.main .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+
+.main .img {
+  display: block;
+}
+
+.title-box {
+  padding-top: 20px;
+  padding-left: 24px;
+}
+
+.product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-thumb .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--portfolio-cardbg-clr);
+  transform: translateY(101%);
+  transition: transform 250ms var(--transform-funct);
+}
+/* description in portfolio-card */
+.product-thumb.description {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--sec-text-clr);
+  color: white;
+}
+
+.portfolio-card .link:hover .overlay,
+.portfolio-card .link:focus .overlay {
+  transform: translateY(0);
+  color: var(--primary-bkg-clr);
+}
+
+.main .title {
+  margin: 0 0 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-clr);
+}
+
+.project-description {
+  margin: 0;
+  font-size: var(--primary-fnt-size);
+  line-height: 1.88;
+  color: var(--primary-text-clr);
+  text-decoration: none;
+  list-style: none;
+}

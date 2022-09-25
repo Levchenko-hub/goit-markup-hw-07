@@ -1,0 +1,119 @@
+/* флекси для хедера */
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__item {
+  display: flex;
+  align-items: center;
+}
+
+/* відступи між посиланнями */
+.site-nav__list > :not(:last-child) {
+  margin-right: 50px;
+}
+
+/* shapka style logo */
+.site-nav__logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-sec-clr);
+  text-decoration: none;
+  font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+/* cпан колор */
+.site-nav__logo--accent {
+  color: var(--primary-accent-clr);
+}
+
+/* shapka style link*/
+.site-nav__link {
+  font-weight: var(--prime-fnt-weight);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-clr);
+  text-decoration: none;
+  font-style: normal;
+  /* padding-bottom: 32px;
+    padding-top: 32px; */
+
+  transition: color 250ms var(--transform-funct);
+}
+
+/* ховери і фокуси лінків */
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: var(--primary-accent-clr);
+}
+
+.site-nav__info:hover,
+.site-nav__info:focus {
+  color: var(--primary-accent-clr);
+}
+
+/* лінк поточної сторінки */
+.site-nav__link--current {
+  position: relative;
+  display: block;
+  color: var(--primary-accent-clr);
+  text-decoration: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.site-nav__link--current::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -1px;
+  /* transform: translateY(1px); */
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-accent-clr);
+  border-radius: 2px;
+}
+
+.site-nav__info {
+  display: flex;
+  align-items: center;
+  font-weight: var(--prime-fnt-weight);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-clr);
+  text-decoration: none;
+  transition: color 250ms var(--transform-funct);
+}
+
+.site-nav__icon {
+  margin-right: 10px;
+  fill: var(--primary-text-clr);
+}
+
+.site-nav__info:hover .site-nav__icon,
+.site-nav__info:focus .site-nav__icon {
+  fill: var(--primary-accent-clr);
+}

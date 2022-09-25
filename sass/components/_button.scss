@@ -1,0 +1,122 @@
+.button {
+  font-family: inherit;
+  font-weight: var(--prime-fnt-weight);
+  font-size: var(--primary-fnt-size);
+  line-height: 1.62;
+  letter-spacing: var(--prime-letr-space);
+  cursor: pointer;
+  transition: box-shadow 250ms var(--transform-funct), color 250ms var(--transform-funct),
+    background-color 250ms var(--transform-funct);
+}
+
+.hero__button--primary {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-bkg-clr);
+  background-color: var(--primary-accent-clr);
+  padding: 10px 32px;
+  min-width: 216px;
+  height: 50px;
+  text-align: center;
+  border: 0px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+.folow__button {
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  background-color: var(--primary-accent-clr);
+  border: 0;
+  color: var(--primary-bkg-clr);
+  fill: var(--primary-bkg-clr);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.list.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.list.filter:hover,
+.list.filter:focus {
+  color: var(--primary-accent-clr);
+}
+
+/* відступи між кнопками */
+.list.filter > :not(:last-child) {
+  margin-right: 8px;
+}
+
+/* другорядні кнопки */
+.button.secondary {
+  color: var(--title-text-clr);
+  background-color: var(--sec-accent-clr);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 25px;
+  border: 0px;
+  margin-bottom: 34px;
+}
+
+/* найменша кнопка */
+.button.secondary.tiny {
+  color: var(--title-text-clr);
+  background-color: var(--sec-accent-clr);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--sec-text-clr);
+  background-color: var(--primary-accent-clr);
+}
+
+.button.active {
+  background-color: var(--primary-accent-clr);
+  color: var(--sec-text-clr);
+}
+.close-button {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-bkg-clr);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  transition: fill 250ms var(--transform-funct);
+}
+
+.close-button:hover,
+.close-button:focus {
+  fill: var(--primary-accent-clr);
+}
+.submit-button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: 'Roboto';
+  border: 0;
+  cursor: pointer;
+  color: var(--primary-bkg-clr);
+}

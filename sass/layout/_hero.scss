@@ -1,0 +1,20 @@
+.hero {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--primary-bkg-clr);
+  background-color: var(--sec-bkg-clr);
+  text-align: center;
+  padding-top: 200px;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/bcg.img.jpg);
+  background-color: var(--sec-bkg-clr);
+  /* box; */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  max-width: 696px;
+  margin: 0 auto;
+}

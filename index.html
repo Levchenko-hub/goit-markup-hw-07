@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <!-- сторінка -->
@@ -374,68 +375,75 @@
 
     <!-- Site footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="wrapper">
+      <div class="footer__container container">
+        <div class="footer__wrapper">
           <!-- Web-studio Logo -->
-          <a class="link logo" href="./index.html"><span class="accent">Web</span>Studio</a>
+          <a class="footer__logo" href="./index.html"
+            ><span class="footer__logo--invers">Web</span>Studio</a
+          >
           <!-- Web-studio contacts -->
-          <address class="contacts">
+          <address class="footer__contacts">
             <ul class="footer-list list">
-              <li class="item">
-                <a class="link gmaps" href="https://goo.gl/maps/LqEMvfZFrGtLSNi77" target="_blank"
+              <li class="footer__item">
+                <a
+                  class="footer__gmaps link"
+                  href="https://goo.gl/maps/LqEMvfZFrGtLSNi77"
+                  target="_blank"
                   >м. Київ, пр-т Лесі Українки, 26
                 </a>
               </li>
-              <li class="item">
-                <a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="footer__item">
+                <a class="footer__contact link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="item">
-                <a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer__item">
+                <a class="footer__contact link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="wrapper social-wrapper">
-          <h3 class="title">Приєднуйтесь</h3>
-          <ul class="list social-net-list">
-            <li class="item">
-              <a class="link" href="https://www.instagram.com/">
-                <svg class="icon" width="20" height="20">
+        <div class="wrapper social__wrapper">
+          <h3 class="social__title">Приєднуйтесь</h3>
+          <ul class="social__list list">
+            <li class="social__item">
+              <a class="social__link" href="https://www.instagram.com/">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="https://www.twitter.com/">
-                <svg class="icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="https://www.twitter.com/">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="https://www.facebook.com/">
-                <svg class="icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="https://www.facebook.com/">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="https://www.linkedin.com/">
-                <svg class="icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="https://www.linkedin.com/">
+                <svg class="social__icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="fooler-field folow">
-          <h3 class="footer-title">Підпишіться на розсилку</h3>
-          <ul class="footer-wrapp">
-            <li><input class="footer-input" type="mail" name="mail" placeholder="E-mail" /></li>
+        <div class="folow">
+          <h3 class="folow__title">Підпишіться на розсилку</h3>
+          <ul class="folow__wrapper">
+            <li><input class="folow__input" type="mail" name="mail" placeholder="E-mail" /></li>
             <li>
-              <button class="footer-button">
+              <button class="folow__button">
                 Підписатися
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="folow__icon" width="20" height="20">
                   <use href="./img/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
               </button>

@@ -1,0 +1,40 @@
+/* reset text margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually__hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* styles and color all page */
+.page {
+  font-family: Roboto, sans-serif;
+  font-size: var(--sec-fnt-size);
+  letter-spacing: var(--prime-letr-space);
+  line-height: 1.71;
+  background-color: var(--primary-bkg-clr);
+  color: var(--primary-text-clr);
+}
